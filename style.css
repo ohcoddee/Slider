@@ -1,0 +1,26 @@
+.slider {
+  position: relative;
+  width: 200px;
+}
+
+.pictures-container {
+  display: flex;
+  overflow: hidden;
+}
+.slider-button {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+.left-button {
+  left: 0;
+}
+.right-button {
+  right: 0;
+}
