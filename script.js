@@ -20,11 +20,13 @@ for (let i = 0; i < pictures.length; i++) {
 
 leftButton.addEventListener("click", onClickLeftButton);
 function onClickLeftButton(event) {
-  picturesContainer.removeChild;
-  picturesContainer.appendChild;
+  const lastChild = picturesContainer.lastChild;
+  picturesContainer.removeChild(lastChild);
+  picturesContainer.prepend(lastChild);
 }
-// rightButton.addEventListener("click", onClickRightButton);
-// function onClickRightButton(event) {
-//   picturesContainer.removeChild;
-//   picturesContainer.appendChild;
-// }
+rightButton.addEventListener("click", onClickRightButton);
+function onClickRightButton(event) {
+  const firstChild = picturesContainer.firstChild;
+  picturesContainer.removeChild(firstChild);
+  picturesContainer.append(firstChild);
+}
