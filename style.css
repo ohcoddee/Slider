@@ -2,7 +2,6 @@
   position: relative;
   width: 200px;
 }
-
 .pictures-container {
   display: flex;
   overflow: hidden;
