@@ -24,9 +24,10 @@ for (let i = 0; i < 사진배열.length; i++) {
 }
 leftButton.addEventListener("click", onClickLeftButton);
 function onClickLeftButton(event) {
-  const lastChild = picturesContainer.lastChild;
-  picturesContainer.removeChild(lastChild);
-  picturesContainer.prepend(lastChild);
+  // const lastChild = picturesContainer.lastChild;
+  // picturesContainer.removeChild(lastChild);
+  // picturesContainer.prepend(lastChild);
+  showingPictureIndex = (showingPictureIndex - 1) % 사진배열.length;
 }
 rightButton.addEventListener("click", onClickRightButton);
 function onClickRightButton(event) {
