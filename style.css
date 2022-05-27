@@ -1,6 +1,7 @@
 .slider {
   position: relative;
   width: 200px;
+  height: 280px;
 }
 .pictures-container {
   display: flex;
@@ -11,9 +12,9 @@
   transform: translateY(-50%);
   top: 50%;
   cursor: pointer;
-
   width: 25px;
   height: 25px;
+
   display: flex;
   justify-content: center;
 }
