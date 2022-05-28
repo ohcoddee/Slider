@@ -19,7 +19,7 @@ for (let i = 0; i < pictures.length; i++) {
   image.src = pictures[i];
   picturesContainer.appendChild(image);
   image.style.position = "absolute";
-  image.style.transition = "left 0.1s";
+  image.style.transition = "left 0.5s ease-in-out";
   image.style.width = `${pictureWidth}px`;
 }
 leftButton.addEventListener("click", onClickLeftButton);
