@@ -32,12 +32,7 @@ function onClickLeftButton(event) {
   }
 }
 
-// const lastChild = picturesContainer.lastChild;
-// picturesContainer.removeChild(lastChild);
-// picturesContainer.prepend(lastChild);
-
-rightButton.addEventListener("click", onClickRightButton);
-function onClickRightButton(event) {
+rightButton.addEventListener("click", (event) => {
   showingPictureIndex = (showingPictureIndex + 1) % pictures.length;
 
   for (let i = 0; i < pictures.length; i++) {
@@ -47,7 +42,7 @@ function onClickRightButton(event) {
     let picture = picturesContainer.children[pictureIndex];
     picture.style.left = `${left}px`;
   }
-}
+});
 
 const showingPictureIndexElement = document.createElement("div");
 showingPictureIndexElement.innerText = "↑showing pciture index";
